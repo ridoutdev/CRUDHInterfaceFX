@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="caja" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.crudhinterface.PrimaryController">
+   <children>
+      <AnchorPane fx:id="subcaja" prefHeight="600.0" prefWidth="1000.0">
+         <children>
+            <TableView fx:id="tablaPedidos" layoutX="235.0" layoutY="152.0" onMouseClicked="#recoger" prefHeight="400.0" prefWidth="530.0">
+              <columns>
+                  <TableColumn fx:id="numeroPedidos" prefWidth="97.0" text="ID" />
+                <TableColumn fx:id="usuarioPedidos" prefWidth="113.0" text="USUARIO" />
+                  <TableColumn fx:id="cicloPedidos" minWidth="0.0" prefWidth="106.0" text="CICLO" />
+                  <TableColumn fx:id="fechaPedidos" minWidth="0.0" prefWidth="106.0" text="FECHA" />
+                  <TableColumn fx:id="estadoPedidos" minWidth="0.0" prefWidth="106.0" text="ESTADO" />
+              </columns>
+            </TableView>
+            <Label fx:id="titulo" layoutX="358.0" layoutY="14.0" text="COMANDAS 3.0">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+            <Label fx:id="textoPedidos" layoutX="444.0" layoutY="101.0" text="PEDIDOS">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

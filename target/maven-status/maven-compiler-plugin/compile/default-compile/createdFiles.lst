@@ -1,0 +1,7 @@
+com\mycompany\crudhinterface\App.class
+com\mycompany\crudhinterface\PrimaryController.class
+com\mycompany\crudhinterface\HibernateUtil.class
+models\Pedidos.class
+com\mycompany\crudhinterface\SecondaryController.class
+module-info.class
+models\Productos.class
